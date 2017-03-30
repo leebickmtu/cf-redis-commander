@@ -45,7 +45,7 @@ cmd += " --redis-host " + credentials.host;
 cmd += " --redis-password " + credentials.password;
 cmd += " --http-auth-username " + "admin";
 cmd += " --http-auth-password " + "pass";
-cmd += " --port " + process.env.PORT;
+cmd += " --port " + process.env.VCAP_APP_PORT;
 
 console.log('cmd: ' + cmd);
 
