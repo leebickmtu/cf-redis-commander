@@ -1,10 +1,5 @@
 ---
 applications:
-- name: cf-redis-commander
-  memory: 256M
-  disk_quota: 128M
+- name: redis-commander-cfready
+  memory: 1G
   instances: 1
-  host: cf-redis-commander
-  services:
-    - redis-service-name-here
-    
